@@ -62,8 +62,16 @@ function Even() {
   document.write("Çift Sayıların toplamı: "+totalEvens+"<br>")
 }
 function Homework(){
-  TotalNumber();
-  Odd();
-  Even();
+  if(number!=44 && number>1){
+    TotalNumber();
+    Odd();
+    Even();
+  }
+  else if(number<=1){
+    document.write("Başlangıçtan küçük sayı girilmez tekrar deneyiniz.");
+  }
+  else{
+    document.write("Secret Key girdiniz.")
+  }
 }
 Homework()
